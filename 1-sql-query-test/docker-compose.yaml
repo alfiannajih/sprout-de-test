@@ -1,0 +1,13 @@
+services:
+  database:
+    image: postgres:13-alpine
+    working_dir: /app
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./initdb.sql:/docker-entrypoint-initdb.d/initdb.sql  
+      - ./data_csv:/docker-entrypoint-initdb.d/data          

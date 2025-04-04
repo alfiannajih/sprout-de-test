@@ -1,0 +1,6 @@
+services:
+  etl-app:
+    build: .
+    volumes:
+      - ./reports:/app/reports
+      - ./db:/app/db

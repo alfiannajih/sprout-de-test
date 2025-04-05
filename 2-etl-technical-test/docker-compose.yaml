@@ -1,5 +1,6 @@
 services:
   etl-app:
+    container_name: etl-ecommerce-sprout
     build: .
     volumes:
       - ./reports:/app/reports

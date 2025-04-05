@@ -53,6 +53,13 @@ Similar to the OLTP database, **we use DuckDB as the OLAP (Online Analytical Pro
     ```bash
     docker logs etl-ecommerce-sprout
     ```
+    Example output:
+    ```bash
+    [2025-04-04 05:34:01] Attempt 1 running main.py with --date 2025-04-04
+    ETL is starting.
+    ETL is finished.
+    [2025-04-04 05:34:01] Success!
+    ```
 
 # Example
 The example output of generated reports can be seen in the directory `./reports/2025-04-04.xlsx`.

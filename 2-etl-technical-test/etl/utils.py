@@ -3,7 +3,6 @@ from datetime import datetime
 import duckdb
 import numpy as np
 import pandas as pd
-import os
 from typing import List, Tuple
 
 user_profiling_columns = {
